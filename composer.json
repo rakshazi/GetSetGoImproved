@@ -1,7 +1,7 @@
 {
-	"name": "usmanhalalit/get-set-go",
+	"name": "rakshazi/get-set-go-improved",
 	"description": "Dynamic Setter-Getter for PHP 5.4+",
-	"homepage": "https://github.com/usmanhalalit/GetSetGo",
+	"homepage": "https://github.com/rakshazi/GetSetGoImproved",
 	"keywords": ["getter", "setter", "trait"],
 	"license": "MIT",
 	"authors":
@@ -14,6 +14,10 @@
 		{
 			"name": "Muhammad Usman",
 			"email": "hi@usman.it",
+			"role": "Developer"
+		},
+		{
+			"name": "Nikita Chernyi",
 			"role": "Developer"
 		}
 	],
