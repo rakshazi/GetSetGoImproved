@@ -1,4 +1,4 @@
-# GetSetGo [![Build Status](https://travis-ci.org/usmanhalalit/GetSetGo.png?branch=master)](https://travis-ci.org/usmanhalalit/GetSetGo)
+# GetSetGoImproved [![Build Status](https://travis-ci.org/usmanhalalit/GetSetGo.png?branch=master)](https://travis-ci.org/usmanhalalit/GetSetGo)
 A dynamic setter-getter library for PHP 5.4+.
 
 You can use methods like `setFoo('bar')` and `getFoo()`, which you DON'T have to create (in your class). GetSetGo will make these methods work for you automatically as long as you have a `$foo` property in your class. 
@@ -12,9 +12,9 @@ GetSetGo uses [Composer](http://getcomposer.org/) to make hassles Go.
 
 Learn to use composer and add this to require (in your composer.json):
 
-    "usmanhalalit/get-set-go": "1.*@dev"
+    "rakshazi/get-set-go-improved": "dev-master"
 
-Library on [Packagist](https://packagist.org/packages/usmanhalalit/get-set-go).
+Library on [Packagist](https://packagist.org/packages/rakshazi/get-set-go-improved).
 
 ## Usage
 
