@@ -12,7 +12,6 @@ trait SetterGetter
      *
      * @throws \InvalidArgumentException
      * @throws SetterGetterException
-     * @throws \Exception
      *
      * @return mixed
      */
@@ -27,9 +26,12 @@ trait SetterGetter
         $property = lcfirst($property);
 
         // If our prefix is not 'get' or 'set', then reject it.
-        if ($methodPrefix != 'get' & $methodPrefix != 'set') {
-            throw new \Exception("Undefined method $method has been called!", 9);
-        }
+        // if ($methodPrefix != 'get' & $methodPrefix != 'set') {
+        //     throw new \Exception("Undefined method $method has been called!", 9);
+        // }
+        
+        //No, just call normal class method.
+        return call_user_func(array($this, $method), (array)$params);
 
         // Read and parse annotation, if the property doesn't exist, it throw an error
         $reader = new \DocBlockReader\Reader(__CLASS__, $property, 'ReflectionProperty');
